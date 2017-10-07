@@ -10,6 +10,11 @@ The Idea is pretty simple, instead of sending the extracted color from the enigm
 It only makes 1 rest call per second because the hue bridge is pretty slow, and saving the rest calls you will not get the right color to the tv picture.
 
 
+### SEE IT IN ACTION
+
+[![Enigmalight](https://img.youtube.com/vi/52k0y1JipzE/0.jpg)](https://www.youtube.com/watch?v=52k0y1JipzE)
+
+
 ### Usage
 
 1. Install enigmalight 
@@ -37,3 +42,6 @@ Too much hard coded stuff.
  ### CONTRIBUTE
 
  This is more or less a proof of concept. Feel free to contribute.
+
+
+ 
