@@ -11,9 +11,9 @@ counter = 9
 			
 def popen():
 	converter = Converter(GamutC)
-	spidev = file( os.getcwd()+'/aufruf.log', "wb")
-	key = "PmjwE4NWFkA6mFA6agS1b5Wi2oeOeLPrNRGWcy72"
-	ip = "192.168.1.175"
+	spidev = file( os.getcwd()+'/error.log', "wb")  # name of the error log file.
+	key = "PmjwE4NWFkA6mFA6agS1b5Wi2oeOeLPrNRGWcy72" # insert your own key 
+	ip = "192.168.1.175" # ip of the hue brdige
 	url = '/api/' + key + '/lights/'
 	lurl = url + '2/state'
 	rurl = url + '1/state'
@@ -51,15 +51,6 @@ def popen():
 
 			if (counter>=10):
 				connection = httplib.HTTPConnection(ip, timeout=10)
-
-				#lparams = {'xy': converter.rgb_to_xy(lr,lg,lb), 'colormode': 'xy', 'bri': int(lll), 'on': True}
-				#connection.request('PUT', lurl, json.dumps(lparams))
-				#response = connection.getresponse()
-				
-				#rparams = {'xy': converter.rgb_to_xy(rr,rg,rb), 'colormode': 'xy', 'bri': int(llr), 'on': True}
-				#connection.request('PUT', rurl, json.dumps(rparams))
-				#response = connection.getresponse()
-
 				bparams = {'xy': converter.rgb_to_xy(br,bg,bb), 'colormode': 'xy', 'bri': int(llb), 'on': True}
 				connection.request('PUT', burl, json.dumps(bparams))
 				response = connection.getresponse()
