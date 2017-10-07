@@ -51,15 +51,6 @@ def popen():
 
 			if (counter>=10):
 				connection = httplib.HTTPConnection(ip, timeout=10)
-
-				#lparams = {'xy': converter.rgb_to_xy(lr,lg,lb), 'colormode': 'xy', 'bri': int(lll), 'on': True}
-				#connection.request('PUT', lurl, json.dumps(lparams))
-				#response = connection.getresponse()
-				
-				#rparams = {'xy': converter.rgb_to_xy(rr,rg,rb), 'colormode': 'xy', 'bri': int(llr), 'on': True}
-				#connection.request('PUT', rurl, json.dumps(rparams))
-				#response = connection.getresponse()
-
 				bparams = {'xy': converter.rgb_to_xy(br,bg,bb), 'colormode': 'xy', 'bri': int(llb), 'on': True}
 				connection.request('PUT', burl, json.dumps(bparams))
 				response = connection.getresponse()
