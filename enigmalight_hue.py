@@ -11,9 +11,9 @@ counter = 9
 			
 def popen():
 	converter = Converter(GamutC)
-	spidev = file( os.getcwd()+'/aufruf.log', "wb")
-	key = "PmjwE4NWFkA6mFA6agS1b5Wi2oeOeLPrNRGWcy72"
-	ip = "192.168.1.175"
+	spidev = file( os.getcwd()+'/error.log', "wb")  # name of the error log file.
+	key = "PmjwE4NWFkA6mFA6agS1b5Wi2oeOeLPrNRGWcy72" # insert your own key 
+	ip = "192.168.1.175" # ip of the hue brdige
 	url = '/api/' + key + '/lights/'
 	lurl = url + '2/state'
 	rurl = url + '1/state'
