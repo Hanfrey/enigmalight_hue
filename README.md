@@ -6,6 +6,9 @@ If you are new to this, follow his tutorial to get the key from your bridge and 
 
 Thanks to  [benknight](https://github.com/benknight/hue-python-rgb-converter) for his lib to transform the rgb to xy values.
 
+The Idea is pretty simple, instead of sending the extracted color from the enigmalight to the LEDs connected it sends them to this script which then makes a rest call to your hue bridge.
+It only makes 1 rest call per second because the hue bridge is pretty slow, and saving the rest calls you will not get the right color to the tv picture.
+
 
 ### Usage
 
