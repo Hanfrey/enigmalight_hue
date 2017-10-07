@@ -12,7 +12,7 @@ It only makes 1 rest call per second because the hue bridge is pretty slow, and 
 
 ### Usage
 
-1. Install enigmalight
+1. Install enigmalight 
 2. Make your enigmalight.cfg
 3. Copy the engimalight_hue.py in the folder you specified in the enigmalight.cfg
 4. Get an Key from your Hue Bridge
@@ -23,8 +23,6 @@ It only makes 1 rest call per second because the hue bridge is pretty slow, and 
 The script is prepared to use 3 Lamps.  This are the 3 Lamps URLs. If you want a 4th you need to do some copy paste driven development . The Number you get from your bridge.
 
 	
-
-        
     	lurl = url + '2/state'
     	rurl = url + '1/state'
     	burl = url + '4/state'
@@ -34,3 +32,8 @@ The script is prepared to use 3 Lamps.  This are the 3 Lamps URLs. If you want a
 
 Sometimes the color is not what i've excepted.
 Too much hard coded stuff.
+ 
+
+ ### CONTRIBUTE
+
+ This is more or less a proof of concept. Feel free to contribute.
