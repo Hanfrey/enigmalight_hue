@@ -17,7 +17,15 @@ Thanks to  [benknight](https://github.com/benknight/hue-python-rgb-converter) fo
 6. Start enigmalight
 
 
-The script is prepared to use 3 Lamps. 
+The script is prepared to use 3 Lamps.  This are the 3 Lamps URLs. If you want a 4th you need to do some copy paste driven development . The Number you get from your bridge.
+
+	
+
+        
+    	lurl = url + '2/state'
+    	rurl = url + '1/state'
+    	burl = url + '4/state'
+
 
 ### Known issues:
 
